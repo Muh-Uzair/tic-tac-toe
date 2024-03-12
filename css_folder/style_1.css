@@ -1,0 +1,169 @@
+body {
+
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aquamarine; */
+
+    overflow: hidden;
+
+    margin: 0px;
+
+    position: relative;
+
+}
+
+.grid_main_box {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr  ;
+
+    row-gap: 20px;
+    column-gap: 20px;
+
+    width: 800px;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 33px;
+
+    z-index: 1000;
+
+}
+.grid_item {
+
+    background-color: rgb(241, 241, 241);
+    border-radius: 30px;
+
+    border: 5px solid rgb(183, 183, 183);
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid_item:hover {
+
+    background-color: rgb(229, 229, 229);;
+}
+.grid_item:active {
+
+    background-color: rgb(216, 216, 216);
+
+    
+}
+.img_box {
+
+    width: 70%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.button_reset {
+
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0px;
+
+    font-family: Showcard Gothic;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: 3px;
+
+    z-index: 500;
+
+    background-color: rgb(255, 204, 0);
+
+    border: none;
+    padding: 20px 80px;
+    border-radius: 80px;
+
+    cursor: pointer;
+}
+.button_reset:hover {
+
+    background-color: rgb(255, 209, 23);
+}
+.button_reset:active {
+
+    background-color: rgb(255, 214, 49);
+}
+
+
+
+
+
+
+
+
+
+
+
+.div_player_signs {
+
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 150px;
+
+
+    /* background-color: bisque; */
+
+    width: 800px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.div_player_sign_box {
+
+    background-color: rgb(255, 204, 0);
+    
+
+    width: 300px;
+    height: 60px;
+
+    margin: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 40px;
+
+    top: 200px;
+
+    font-family: Showcard Gothic;
+    font-size: 36px;
+
+    border: 5px solid rgb(50, 50, 50);
+}
+/* .player_1_sign_box {
+
+
+}
+.player_2_sign_box {
+
+
+
+} */
