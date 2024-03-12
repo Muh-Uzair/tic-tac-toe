@@ -116,8 +116,8 @@ function deal_correct_combination_function(start , end , winning_combination , a
     {
         // console.log(val) 
 
-        if( document.querySelector(`.${val}`).innerHTML === `<img class="img_box" src="./public/cross_picture.png" alt="error">` ) player_1_count++ ;
-        else if( document.querySelector(`.${val}`).innerHTML === `<img class="img_box" src="./public/circle_picture.png" alt="error">` ) player_2_count++ ;
+        if( document.querySelector(`.${val}`).innerHTML === `<img class="img_box" src="https://raw.githubusercontent.com/Muh-Uzair/tic-tac-toe/master/public/cross_picture.png" alt="error">` ) player_1_count++ ;
+        else if( document.querySelector(`.${val}`).innerHTML === `<img class="img_box" src="https://github.com/Muh-Uzair/tic-tac-toe/blob/master/public/circle_picture.png?raw=true" alt="error">` ) player_2_count++ ;
 
 
         // 5 : agar player 1 jeet gay hai tou us winner anao
@@ -216,14 +216,6 @@ function winning_combination_logic_function() {
          (document.querySelector(".box_7").innerHTML.trim().length !== 0  ) )
     { deal_correct_combination_function(3, 7 , 8-1 , 2) ;  }
 
-
-
-
-
-
-
-    
-   
     
 }
 export function grid_box_clicked_working_function(clicked_box) {
@@ -235,8 +227,8 @@ export function grid_box_clicked_working_function(clicked_box) {
     if(final_winning_status === true ) return ;
 
     //  : if a box is filled allready then player can not fill it again
-    if(clicked_box.innerHTML === `<img class="img_box" src="./public/cross_picture.png" alt="error">` ||
-        clicked_box.innerHTML === `<img class="img_box" src="./public/circle_picture.png" alt="error">` )
+    if(clicked_box.innerHTML === `<img class="img_box" src="https://raw.githubusercontent.com/Muh-Uzair/tic-tac-toe/master/public/cross_picture.png" alt="error">` ||
+        clicked_box.innerHTML === `<img class="img_box" src="https://github.com/Muh-Uzair/tic-tac-toe/blob/master/public/circle_picture.png?raw=true" alt="error">` )
         return ;
 
     
@@ -244,7 +236,7 @@ export function grid_box_clicked_working_function(clicked_box) {
     //  : if player_1 is active
     if(player_1 === true ) { 
 
-        clicked_box.innerHTML = `<img class="img_box" src="./public/cross_picture.png" alt="error">` ;
+        clicked_box.innerHTML = `<img class="img_box" src="https://raw.githubusercontent.com/Muh-Uzair/tic-tac-toe/master/public/cross_picture.png" alt="error">` ;
         player_1 = false ;
         player_2 = true ;
 
@@ -252,7 +244,7 @@ export function grid_box_clicked_working_function(clicked_box) {
     //  : if player_2 is active
     else if(player_2 === true ) { 
 
-        clicked_box.innerHTML = `<img class="img_box" src="./public/circle_picture.png" alt="error">` ;
+        clicked_box.innerHTML = `<img class="img_box" src="https://github.com/Muh-Uzair/tic-tac-toe/blob/master/public/circle_picture.png?raw=true" alt="error">` ;
         player_2 = false ;
         player_1 = true ;
 
